@@ -2,11 +2,9 @@ plugins {
     id 'com.android.library'
     id 'kotlin-android'
     id 'kotlin-kapt'
-    id 'maven-publish'
     id 'kotlin-parcelize'
     id 'androidx.navigation.safeargs.kotlin'
-    id 'signing'
-    id "org.jetbrains.dokka" version "1.5.0"
+    id 'org.jetbrains.kotlin.plugin.compose'
 }
 def getVersionName = { ->
     return "$HMS_ROOM_KIT_VERSION"
@@ -52,9 +50,6 @@ android {
         compose true
         buildConfig = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.8"
-    }
 
     publishing {
         singleVariant('release') {
@@ -65,7 +60,7 @@ android {
 
 dependencies {
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:2.2.0"
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.10.0'
@@ -131,55 +126,4 @@ dependencies {
     implementation 'androidx.compose.runtime:runtime-livedata'
     implementation "com.github.bumptech.glide:compose:1.0.0-beta01"
 
-}
-
-task javadocJar(type: Jar, dependsOn: dokkaJavadoc) {
-    archiveFileName = "javadoc.jar"
-    from "build/dokka/javadoc"
-    archiveClassifier.set("javadoc")
-}
-
-afterEvaluate {
-    publishing {
-        publications {
-            // Creates a Maven publication called "release".
-            release(MavenPublication) {
-                from components.release
-                pom {
-                    // Only sign the artefacts if this is a maven central build.
-                    // This would only halt jitpack builds and/or make our signing keys public.
-                    if(rootProject.properties["ossrhUsername"]) {
-                        artifact javadocJar
-                        signing {
-                            sign publishing.publications
-                        }
-                    }
-                    name = "100ms.live Android Room Kit"
-                    description = "Room Kit that simplifies setting up videoconferencing in your own app. See more at https://www.100ms.live/docs/android/v2/guides/quickstart"
-                    url = "100ms.live"
-                    licenses {
-                        license {
-                            name = 'MIT License'
-                            url = 'http://www.opensource.org/licenses/mit-license.php'
-                        }
-                    }
-                    developers {
-                        developer {
-                            id = '1'
-                            name = '100ms'
-                            email = 'support@100ms.live'
-                        }
-                    }
-                    scm {
-                        connection = 'SCM is private'
-                        developerConnection = 'SCM is private'
-                        url = 'https://github.com/100mslive/100ms-android'
-                    }
-                }
-                groupId = "live.100ms"
-                artifactId = 'room-kit'
-                version = getVersionName()
-            }
-        }
-    }
 }
