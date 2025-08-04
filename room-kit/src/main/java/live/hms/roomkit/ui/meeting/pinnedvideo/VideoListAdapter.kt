@@ -204,7 +204,7 @@ class VideoListAdapter(
                     holder.binding.networkQuality.colorFilter = null
                   }
                   holder.binding.networkQuality.setImageDrawable(it)
-                } ?: {
+                } ?: run {
                   holder.binding.networkQuality.visibility = View.GONE
                 }
               }

@@ -123,7 +123,7 @@ class RtmpRecordBottomSheet(val startClickListener: ()->Unit) : BottomSheetDialo
            // dialog.window?.setBackgroundDrawableResource(R.color.primary_bg)
 
             dialog.window?.attributes?.flags =
-                dialog.window?.attributes?.flags?.and((WindowManager.LayoutParams.FLAG_DIM_BEHIND).inv())
+                dialog.window?.attributes?.flags?.and((WindowManager.LayoutParams.FLAG_DIM_BEHIND).inv()) ?: 0
 
             dialog.show()
 

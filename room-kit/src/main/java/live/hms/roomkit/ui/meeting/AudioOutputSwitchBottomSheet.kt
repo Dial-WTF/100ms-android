@@ -187,7 +187,7 @@ class AudioOutputSwitchBottomSheet(
         }
 
         // Capitalize the first character
-        val capitalized = input.toLowerCase().replaceFirstChar { it.uppercase() }
+        val capitalized = input.lowercase().replaceFirstChar { it.uppercase() }
 
         // Replace underscores with spaces
         return capitalized.replace('_', ' ')
