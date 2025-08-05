@@ -125,7 +125,7 @@ class VideoGridFragment : Fragment() {
 
 
     }
-    
+
     private fun resetWhiteboardState() {
         setWhiteBoardRotation(shouldRotate = false)
         meetingViewModel.setWhiteBoardFullScreenMode(false)
@@ -326,7 +326,7 @@ class VideoGridFragment : Fragment() {
                             )
                         binding.minimizedIconVideoOff.isEnabled = false
 
-                        if (isMinimized.not() && it.video?.isMute !== lastVideoMuteState)
+                        if (isMinimized.not() && it.video?.isMute != lastVideoMuteState)
                             updateVideoViewLayout(binding.insetPillMaximised, isVideoOff = true, it)
                         lastVideoMuteState = true
                         binding.nameInitials.text = NameUtils.getInitials(it.peer.name.orEmpty())
@@ -340,7 +340,7 @@ class VideoGridFragment : Fragment() {
                             )
                         binding.minimizedIconVideoOff.isEnabled = true
 
-                        if (isMinimized.not() && (it.video?.isMute !== lastVideoMuteState || lastTrackId != it.video?.trackId)) {
+                        if (isMinimized.not() && (it.video?.isMute != lastVideoMuteState || lastTrackId != it.video?.trackId)) {
                             updateVideoViewLayout(
                                 binding.insetPillMaximised,
                                 isVideoOff = false,

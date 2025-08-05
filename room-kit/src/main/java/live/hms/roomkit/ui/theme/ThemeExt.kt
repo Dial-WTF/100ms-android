@@ -191,7 +191,7 @@ internal fun FragmentMeetingBinding.applyTheme() {
         )
     )
 
-    tvViewersCount.drawableLeft?.setTint(
+    tvViewersCount.drawableStart?.setTint(
         getColorOrDefault(
             HMSPrebuiltTheme.getColours()?.onSurfaceHigh,
             HMSPrebuiltTheme.getDefaults().onsurface_high_emp
@@ -347,13 +347,13 @@ internal fun ChangeNameFragmentBinding.applyTheme() {
 
 
     standardBottomSheet.background =
-        root.context.resources.getDrawable(R.drawable.gray_shape_round_dialog)
-            .apply {
+        ResourcesCompat.getDrawable(root.context.resources, R.drawable.gray_shape_round_dialog, null)
+            ?.apply {
                 val color = getColorOrDefault(
                     HMSPrebuiltTheme.getColours()?.surfaceDim,
                     HMSPrebuiltTheme.getDefaults().background_default
                 )
-                setColorFilter(color, PorterDuff.Mode.ADD);
+                colorFilter = PorterDuffColorFilter(color, PorterDuff.Mode.ADD)
             }
 
     newName.setBackgroundAndColor(
@@ -415,13 +415,13 @@ internal fun BottomSheetStopRecordingBinding.applyTheme() {
 
 
     standardBottomSheet.background =
-        root.context.resources.getDrawable(R.drawable.gray_shape_round_dialog)
-            .apply {
+        ResourcesCompat.getDrawable(root.context.resources, R.drawable.gray_shape_round_dialog, null)
+            ?.apply {
                 val color = getColorOrDefault(
                     HMSPrebuiltTheme.getColours()?.surfaceDim,
                     HMSPrebuiltTheme.getDefaults().background_default
                 )
-                setColorFilter(color, PorterDuff.Mode.ADD);
+                colorFilter = PorterDuffColorFilter(color, PorterDuff.Mode.ADD)
             }
 
 
@@ -1986,8 +1986,7 @@ private fun TextInputLayout.applyTheme() {
                 getColorOrDefault(
                     HMSPrebuiltTheme.getColours()?.onSurfaceLow,
                     HMSPrebuiltTheme.getDefaults().onsurface_low_emp
-                ),
-                PorterDuff.Mode.SRC_IN
+                ), PorterDuff.Mode.SRC_IN
             )
         }
 //    boxStrokeColor = getColorOrDefault(
@@ -3071,7 +3070,7 @@ private fun dialogBackground(resources: Resources): Drawable =
             HMSPrebuiltTheme.getColours()?.backgroundDefault,
             HMSPrebuiltTheme.getDefaults().background_default
         )
-        setColorFilter(color, PorterDuff.Mode.ADD)
+        colorFilter = PorterDuffColorFilter(color, PorterDuff.Mode.ADD)
     }
 
 fun BottomSheetMessageOptionsBinding.applyTheme() {

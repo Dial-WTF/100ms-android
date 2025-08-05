@@ -61,6 +61,7 @@ class HMSRoomFragment : Fragment() {
         requireActivity().invalidateOptionsMenu()
         setHasOptionsMenu(true)
         settings = SettingsStore(requireContext())
+        activity?.window?.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
 
         meetingViewModel.initSdk(
             roomCode.orEmpty(),
@@ -89,14 +90,6 @@ class HMSRoomFragment : Fragment() {
                     }
                 }
             })
-
-
-
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        activity?.window?.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
     }
 
 

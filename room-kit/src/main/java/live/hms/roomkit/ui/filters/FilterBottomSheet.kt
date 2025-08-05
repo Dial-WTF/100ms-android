@@ -5,6 +5,7 @@ import android.app.Dialog
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.graphics.PorterDuff
+import android.graphics.PorterDuffColorFilter
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -16,6 +17,7 @@ import android.widget.SeekBar
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.SwitchCompat
+import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.SnapHelper
@@ -73,12 +75,12 @@ class FilterBottomSheet(
         super.onViewCreated(view, savedInstanceState)
 
 
-        binding.root.background = resources.getDrawable(R.drawable.gray_shape_round_dialog).apply {
+        binding.root.background = ResourcesCompat.getDrawable(resources, R.drawable.gray_shape_round_dialog, null)?.apply {
             val color = getColorOrDefault(
                 HMSPrebuiltTheme.getColours()?.backgroundDefault,
                 HMSPrebuiltTheme.getDefaults().background_default
             )
-            setColorFilter(color, PorterDuff.Mode.ADD);
+            colorFilter = PorterDuffColorFilter(color, PorterDuff.Mode.ADD)
         }
 
         var btnArray = arrayOf(

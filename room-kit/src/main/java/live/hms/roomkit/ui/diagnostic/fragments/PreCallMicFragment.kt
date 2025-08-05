@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import live.hms.roomkit.R
@@ -197,7 +198,7 @@ class PreCallMicFragment : Fragment() {
     }
 
     private fun setIconEnabled(drawableId: Int) {
-        binding.btnSpeakerSelection.setDrawables(start = resources.getDrawable(drawableId))
+        binding.btnSpeakerSelection.setDrawables(start = ResourcesCompat.getDrawable(resources, drawableId, null))
     }
 
 

@@ -2,11 +2,13 @@ package live.hms.roomkit.ui.meeting
 
 import android.annotation.SuppressLint
 import android.graphics.PorterDuff
+import android.graphics.PorterDuffColorFilter
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
@@ -273,12 +275,12 @@ class SessionOptionBottomSheet(
 
 
         binding.rootLayout.background =
-            resources.getDrawable(R.drawable.gray_shape_round_dialog).apply {
+            ResourcesCompat.getDrawable(resources, R.drawable.gray_shape_round_dialog, null)?.apply {
                     val color = getColorOrDefault(
                         HMSPrebuiltTheme.getColours()?.backgroundDefault,
                         HMSPrebuiltTheme.getDefaults().background_default
                     )
-                    setColorFilter(color, PorterDuff.Mode.ADD)
+                    colorFilter = PorterDuffColorFilter(color, PorterDuff.Mode.ADD)
             }
 
 

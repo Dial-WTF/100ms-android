@@ -2,6 +2,7 @@ package live.hms.roomkit
 
 import android.util.Log
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.asCoroutineDispatcher
 import kotlinx.coroutines.suspendCancellableCoroutine
 import live.hms.video.error.HMSException
@@ -11,12 +12,15 @@ import live.hms.video.sdk.HMSSDK
 import java.util.concurrent.Executors
 import kotlin.coroutines.CoroutineContext
 
+@OptIn(ExperimentalCoroutinesApi::class)
 object HMSPluginScope : CoroutineScope {
     private val executor = Executors.newSingleThreadScheduledExecutor()
     private val dispatcher = executor.asCoroutineDispatcher()
     override val coroutineContext: CoroutineContext
         get() = dispatcher
 }
+
+@OptIn(ExperimentalCoroutinesApi::class)
 internal suspend fun HMSSDK.addPlugin(plugin : HMSVideoPlugin): Unit {
     return suspendCancellableCoroutine { continuation ->
         if (getPlugins().orEmpty().isEmpty().not()){
@@ -35,6 +39,7 @@ internal suspend fun HMSSDK.addPlugin(plugin : HMSVideoPlugin): Unit {
     }
 }
 
+@OptIn(ExperimentalCoroutinesApi::class)
 internal suspend fun HMSSDK.removePlugin(): Unit {
     return suspendCancellableCoroutine { continuation ->
         for (plugin in this.getPlugins().orEmpty()) {

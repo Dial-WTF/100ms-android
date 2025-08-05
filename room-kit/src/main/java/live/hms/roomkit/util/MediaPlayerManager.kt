@@ -4,12 +4,12 @@ import android.content.Context
 import android.media.MediaPlayer
 import androidx.annotation.RawRes
 import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.LifecycleObserver
-import androidx.lifecycle.OnLifecycleEvent
+import androidx.lifecycle.LifecycleEventObserver
+import androidx.lifecycle.LifecycleOwner
 
 class MediaPlayerManager(
     private val lifecycle: Lifecycle
-) : LifecycleObserver {
+) : LifecycleEventObserver {
 
     private var mediaPlayer: MediaPlayer? = null
 
@@ -28,14 +28,13 @@ class MediaPlayerManager(
     }
 
 
-    @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
-    fun onDestroy() {
-        releaseMediaPlayer()
-    }
-
-    @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
-    fun onStop() {
-        releaseMediaPlayer()
+    override fun onStateChanged(source: LifecycleOwner, event: Lifecycle.Event) {
+        when (event) {
+            Lifecycle.Event.ON_DESTROY, Lifecycle.Event.ON_STOP -> {
+                releaseMediaPlayer()
+            }
+            else -> { /* No action needed for other events */ }
+        }
     }
 
     private fun setSource(@RawRes raw: Int, context: Context) {

@@ -13,7 +13,7 @@ import live.hms.roomkit.ui.theme.getShape
 
 class GridOptionItem(
     private var title: String,
-    @DrawableRes val icon: Int,
+    @param:DrawableRes val icon: Int,
     private val onClick: () -> Unit,
     var isSelected: Boolean = false,
     var particpantCount: Int? = null,

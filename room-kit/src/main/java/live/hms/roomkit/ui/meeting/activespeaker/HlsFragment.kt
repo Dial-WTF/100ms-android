@@ -42,7 +42,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.ClickableText
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.Divider
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -597,7 +597,7 @@ fun ChatHeader(
                         contentDescription = "collapse"
                     )
                 }
-                Divider(
+                HorizontalDivider(
                     color = Variables.BorderBright,
                     modifier = Modifier
                         .height(1.dp)
@@ -683,7 +683,7 @@ fun ChatHeader(
                 )
             }
         }
-        Divider(
+        HorizontalDivider(
             color = Variables.BorderBright,
             modifier = Modifier
                 .height(1.dp)

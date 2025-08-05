@@ -15,6 +15,7 @@ import android.widget.TextView
 import androidx.annotation.ColorInt
 import androidx.annotation.DimenRes
 import androidx.annotation.DrawableRes
+import androidx.core.content.ContextCompat
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.cardview.widget.CardView
@@ -133,7 +134,7 @@ fun ShapeableImageView.setIconEnabled(
 ) {
     val radius = resources.getDimension(R.dimen.eight_dp).toInt()
 
-    this.setBackgroundColor(resources.getColor(android.R.color.transparent))
+    this.setBackgroundColor(ContextCompat.getColor(context, android.R.color.transparent))
 
     shapeAppearanceModel =
         shapeAppearanceModel.toBuilder().setAllCorners(CornerFamily.ROUNDED, radius.toFloat())
@@ -716,7 +717,7 @@ private fun dialogBackground(resources: Resources): Drawable =
             HMSPrebuiltTheme.getColours()?.backgroundDefault,
             HMSPrebuiltTheme.getDefaults().background_default
         )
-        setColorFilter(color, PorterDuff.Mode.ADD)
+        colorFilter = PorterDuffColorFilter(color, PorterDuff.Mode.ADD)
     }
 
 private fun searchViewTheme(containerSearch: MaterialCardView, textInputSearch: EditText) {

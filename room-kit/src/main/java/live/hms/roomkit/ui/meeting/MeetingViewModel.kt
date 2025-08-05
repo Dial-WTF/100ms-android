@@ -944,7 +944,7 @@ class MeetingViewModel(
             addRTCStatsObserver()
         }
 
-        
+
 
         cleanup()
 
@@ -1157,7 +1157,7 @@ class MeetingViewModel(
                         _peerMetadataNameUpdate.postValue(Pair(hmsPeer, type))
                         participantPeerUpdate.postValue(Unit)
                     }
-                    else -> Unit
+
                 }
             }
 
@@ -2955,4 +2955,3 @@ class MeetingViewModel(
         )
     }
 }
-
