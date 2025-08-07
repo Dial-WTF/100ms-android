@@ -11,7 +11,7 @@
             android:textAlignment="center"
             android:layout_gravity="center"
             android:gravity="center"
-            android:fontFamily="@font/funneldisplay_regular"
+            android:fontFamily="@font/funnel_display_regular"
             android:maxLines="1"
             android:layout_marginRight="@dimen/spacing_d2"
             android:drawableEnd="@drawable/chevron_right"

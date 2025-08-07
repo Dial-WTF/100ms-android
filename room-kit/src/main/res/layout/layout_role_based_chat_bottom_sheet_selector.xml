@@ -31,7 +31,7 @@
                 android:layout_gravity="center_vertical"
                 android:drawablePadding="8dp"
                 android:lineHeight="24sp"
-                android:fontFamily="@font/funneldisplay_semibold"
+                android:fontFamily="@font/funnel_display_semibold"
                 android:text="Send Messages To"
                 android:textSize="16sp" />
 
@@ -97,7 +97,7 @@
                 android:letterSpacing="0.01"
                 android:lineHeight="20sp"
                 android:lineSpacingExtra="3sp"
-                android:fontFamily="@font/funneldisplay_regular"
+                android:fontFamily="@font/funnel_display_regular"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/no_recipients_yet_message_options_recyclerview"

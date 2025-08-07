@@ -18,7 +18,7 @@
             android:id="@+id/questionNumbering"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/funneldisplay_medium"
+            android:fontFamily="@font/funnel_display_medium"
             android:lineHeight="16dp"
             android:textSize="10sp"
             tools:text="Question 1 of 2" />
@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/spacing_d2"
-            android:fontFamily="@font/funneldisplay_regular"
+            android:fontFamily="@font/funnel_display_regular"
             android:lineHeight="24dp"
             android:textSize="16sp" />
 
@@ -58,7 +58,7 @@
                 android:id="@+id/editQuestionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/funneldisplay_semibold"
+                android:fontFamily="@font/funnel_display_semibold"
                 android:gravity="center"
                 android:lineHeight="24px"
                 android:paddingHorizontal="@dimen/spacing_d2"

@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/funneldisplay_semibold"
+            android:fontFamily="@font/funnel_display_semibold"
             android:padding="8dp"
             android:text="Change Metadata"
             android:textSize="20sp" />
@@ -60,7 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gray_round_stroked_drawable"
-                android:fontFamily="@font/funneldisplay_semibold"
+                android:fontFamily="@font/funnel_display_semibold"
                 android:paddingHorizontal="30dp"
                 android:text="Cancel" />
 
@@ -73,7 +73,7 @@
                 android:id="@+id/submit_name_change_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/funneldisplay_semibold"
+                android:fontFamily="@font/funnel_display_semibold"
                 android:paddingHorizontal="30dp"
                 android:text="Change" />
 
@@ -95,7 +95,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/funneldisplay_semibold"
+            android:fontFamily="@font/funnel_display_semibold"
             android:padding="8dp"
             android:text="Observe Values"
             android:textSize="20sp" />
@@ -125,7 +125,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gray_round_stroked_drawable"
-                android:fontFamily="@font/funneldisplay_semibold"
+                android:fontFamily="@font/funnel_display_semibold"
                 android:paddingHorizontal="30dp"
                 android:text="Cancel" />
 
@@ -138,7 +138,7 @@
                 android:id="@+id/submit_observer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/funneldisplay_semibold"
+                android:fontFamily="@font/funnel_display_semibold"
                 android:paddingHorizontal="30dp"
                 android:text="Observe" />
 
@@ -155,7 +155,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/funneldisplay_semibold"
+            android:fontFamily="@font/funnel_display_semibold"
             android:padding="8dp"
             android:text="Current Vals"
             android:textSize="20sp" />

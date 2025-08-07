@@ -27,11 +27,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
-    kotlin {
-        compilerOptions {
-            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
-            freeCompilerArgs.add("-Xannotation-default-target=param-property")
-        }
+    kotlinOptions {
+        jvmTarget = "17"
+        freeCompilerArgs += "-Xannotation-default-target=param-property"
     }
 }
 
@@ -59,15 +57,20 @@ val copyFonts by tasks.registering(Copy::class) {
         val nameWithoutExt = if (lastDotIndex > 0) filename.substring(0, lastDotIndex) else filename
         val extension = if (lastDotIndex > 0) filename.substring(lastDotIndex) else ".ttf"
 
-        // Convert name to lowercase, replace invalid chars
-        val lower = nameWithoutExt.lowercase()
-        val replaced = lower.replace(Regex("[^a-z0-9_]"), "_")
+        // Handle specific font name conversions
+        val converted = nameWithoutExt
+            .replace(Regex("-"), "_")                    // Replace hyphens with underscores
+            .replace(Regex("SemiBold"), "Semibold")      // Fix SemiBold -> Semibold
+            .replace(Regex("ExtraBold"), "Extrabold")    // Fix ExtraBold -> Extrabold
+            .replace(Regex("([a-z])([A-Z])"), "$1_$2")  // Add underscore before capitals
+            .lowercase()                                 // Convert to lowercase
+            .replace(Regex("[^a-z0-9_]"), "_")          // Replace invalid chars with underscores
 
         // Ensure starts with a letter
-        val finalName = if (!replaced.first().isLetter()) {
-            "f$replaced"
+        val finalName = if (!converted.first().isLetter()) {
+            "f$converted"
         } else {
-            replaced
+            converted
         }
 
         "$finalName$extension"

@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:drawablePadding="8dp"
-                android:fontFamily="@font/funneldisplay_semibold"
+                android:fontFamily="@font/funnel_display_semibold"
                 android:text="Options"
                 android:textSize="16sp" />
 

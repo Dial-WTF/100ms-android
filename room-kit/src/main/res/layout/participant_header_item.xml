@@ -15,7 +15,7 @@
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:letterSpacing="0.15"
-    android:fontFamily="@font/funneldisplay_semibold"
+    android:fontFamily="@font/funnel_display_semibold"
     android:textSize="14sp"
     android:paddingHorizontal="@dimen/spacing_d2"
     android:drawableEnd="@drawable/chevron_down"

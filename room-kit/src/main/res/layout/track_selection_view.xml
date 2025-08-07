@@ -17,7 +17,7 @@
         android:layout_gravity="center"
         android:clickable="false"
         android:focusable="false"
-        android:fontFamily="@font/funneldisplay_regular"
+        android:fontFamily="@font/funnel_display_regular"
         android:text="360p"
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"

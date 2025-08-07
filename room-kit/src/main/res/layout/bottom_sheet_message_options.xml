@@ -30,7 +30,7 @@
                 android:layout_gravity="center_vertical"
                 android:drawablePadding="8dp"
                 android:lineHeight="24sp"
-                android:fontFamily="@font/funneldisplay_semibold"
+                android:fontFamily="@font/funnel_display_semibold"
                 android:text="Message Options"
                 android:textSize="16sp" />
 
@@ -84,7 +84,7 @@
             <TextView
                 android:id="@+id/pinMessageText"
                 android:layout_width="match_parent"
-                android:fontFamily="@font/funneldisplay_semibold"
+                android:fontFamily="@font/funnel_display_semibold"
                 android:lineHeight="20sp"
                 android:textSize="14sp"
                 android:translationY="1.53sp"
@@ -113,7 +113,7 @@
                 <TextView
                     android:id="@+id/hideMessageText"
                     android:layout_width="match_parent"
-                    android:fontFamily="@font/funneldisplay_semibold"
+                    android:fontFamily="@font/funnel_display_semibold"
                     android:lineHeight="20sp"
                     android:textSize="14sp"
                     android:translationY="1.53sp"
@@ -139,7 +139,7 @@
                     android:paddingStart="@dimen/spacing_d1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:fontFamily="@font/funneldisplay_semibold"
+                    android:fontFamily="@font/funnel_display_semibold"
                     android:lineHeight="20sp"
                     android:paddingVertical="@dimen/spacing_d2"
                     android:translationY="1.53sp"

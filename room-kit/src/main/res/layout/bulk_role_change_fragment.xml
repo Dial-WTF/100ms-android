@@ -40,7 +40,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:fontFamily="@font/funneldisplay_semibold"
+                        android:fontFamily="@font/funnel_display_semibold"
                         android:text="Bulk Role Change"
                         android:textSize="20sp"
                         app:layout_constraintStart_toStartOf="@+id/tv_start_streaming_title"
@@ -63,7 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/funneldisplay_semibold"
+                android:fontFamily="@font/funnel_display_semibold"
                 android:text="To Role"
                 android:textSize="20sp" />
 
@@ -71,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:fontFamily="@font/funneldisplay_regular"
+                android:fontFamily="@font/funnel_display_regular"
                 android:text="The role that you want everyone changed to."
                 android:textSize="14sp" />
 
@@ -93,7 +93,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:fontFamily="@font/funneldisplay_regular"
+                android:fontFamily="@font/funnel_display_regular"
                 android:text="From Roles"
                 android:textSize="14sp" />
 

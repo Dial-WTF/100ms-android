@@ -40,10 +40,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+
     kotlinOptions {
         jvmTarget = '17'
         freeCompilerArgs += ['-Xannotation-default-target=param-property']
     }
+
+
 
     buildFeatures {
         viewBinding true
@@ -139,12 +142,17 @@ task copyFonts(type: Copy) {
         def nameWithoutExt = lastDotIndex > 0 ? filename.substring(0, lastDotIndex) : filename
         def extension = lastDotIndex > 0 ? filename.substring(lastDotIndex) : '.ttf'
 
-        // Convert name to lowercase, replace invalid chars
-        def lower = nameWithoutExt.toLowerCase()
-        def replaced = lower.replaceAll(/[^a-z0-9_]/, '_')
+        // Handle specific font name conversions
+        def converted = nameWithoutExt
+            .replaceAll(/-/, '_')                    // Replace hyphens with underscores
+            .replaceAll(/SemiBold/, 'Semibold')      // Fix SemiBold -> Semibold
+            .replaceAll(/ExtraBold/, 'Extrabold')    // Fix ExtraBold -> Extrabold
+            .replaceAll(/([a-z])([A-Z])/, '$1_$2')  // Add underscore before capitals
+            .toLowerCase()                           // Convert to lowercase
+            .replaceAll(/[^a-z0-9_]/, '_')          // Replace invalid chars with underscores
 
         // Ensure starts with a letter
-        def finalName = !replaced.charAt(0).isLetter() ? "f${replaced}" : replaced
+        def finalName = !converted.charAt(0).isLetter() ? "f${converted}" : converted
 
         "${finalName}${extension}"
     }

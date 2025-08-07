@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:fontFamily="@font/funneldisplay_semibold"
+            android:fontFamily="@font/funnel_display_semibold"
             android:text="Welcome Joy!"
             android:textAllCaps="true"
             android:textSize="10sp"
@@ -49,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:fontFamily="@font/funneldisplay_semibold"
+            android:fontFamily="@font/funnel_display_semibold"
             android:text="Let’s get you started"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="@+id/tv_start_streaming_title"
@@ -68,7 +68,7 @@
             android:id="@+id/tv_start_streaming"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/funneldisplay_regular"
+            android:fontFamily="@font/funnel_display_regular"
             android:text="Start Streaming"
             android:textColor="#CCE0ECFF"
             android:layout_marginTop="32dp"
@@ -112,7 +112,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/funneldisplay_semibold"
+                        android:fontFamily="@font/funnel_display_semibold"
                         android:text="Live Stream with HLS"
                         android:textSize="20sp" />
 
@@ -120,7 +120,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:fontFamily="@font/funneldisplay_regular"
+                        android:fontFamily="@font/funnel_display_regular"
                         android:text="Stream to millions, edit and control what the viewer sees and more!"
                         android:textSize="14sp" />
 
@@ -178,7 +178,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/funneldisplay_semibold"
+                        android:fontFamily="@font/funnel_display_semibold"
                         android:text="Stream to Facebook, Twitch, and others"
                         android:textSize="20sp" />
 
@@ -186,7 +186,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:fontFamily="@font/funneldisplay_regular"
+                        android:fontFamily="@font/funnel_display_regular"
                         android:text="Stream to a specific destination directly from your app."
                         android:textSize="14sp" />
 

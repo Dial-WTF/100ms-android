@@ -31,7 +31,7 @@
                 android:gravity="center_vertical"
                 android:layout_marginStart="8dp"
                 android:lineHeight="24sp"
-                android:fontFamily="@font/funneldisplay_semibold"
+                android:fontFamily="@font/funnel_display_semibold"
                 android:textSize="20sp"
                 android:text="@string/end_session" />
 
@@ -45,7 +45,7 @@
                 android:gravity="start"
                 android:lineHeight="20sp"
                 android:textSize="14dp"
-                android:fontFamily="@font/funneldisplay_semibold"
+                android:fontFamily="@font/funnel_display_semibold"
                 android:text="@string/end_stream_description_full" />
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -55,7 +55,7 @@
             android:text="@string/end_session"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
-            android:fontFamily="@font/funneldisplay_semibold"
+            android:fontFamily="@font/funnel_display_semibold"
             android:background="@drawable/primary_round_drawable"
             android:gravity="center"
             android:textSize="16sp"

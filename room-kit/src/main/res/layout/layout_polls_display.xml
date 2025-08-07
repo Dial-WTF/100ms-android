@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_marginBottom="2dp"
-            android:fontFamily="@font/funneldisplay_regular"
+            android:fontFamily="@font/funnel_display_regular"
             android:lineHeight="16px"
             android:paddingHorizontal="@dimen/spacing_d1"
             android:paddingVertical="4dp"
@@ -54,7 +54,7 @@
         android:id="@+id/pollStarterUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/funneldisplay_semibold"
+        android:fontFamily="@font/funnel_display_semibold"
         android:textSize="16sp"
         android:hint="Tyler started a poll"
         />

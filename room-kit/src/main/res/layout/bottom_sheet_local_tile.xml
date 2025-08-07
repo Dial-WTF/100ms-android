@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:drawablePadding="8dp"
-                android:fontFamily="@font/funneldisplay_semibold"
+                android:fontFamily="@font/funnel_display_semibold"
                 android:text="You"
                 android:textSize="16sp" />
 
@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:drawablePadding="8dp"
-                android:fontFamily="@font/funneldisplay_regular"
+                android:fontFamily="@font/funnel_display_regular"
                 android:lineHeight="16dp"
                 android:textSize="13sp" />
 
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/icon_maximised"
             android:drawablePadding="8dp"
-            android:fontFamily="@font/funneldisplay_semibold"
+            android:fontFamily="@font/funnel_display_semibold"
             android:gravity="center_vertical"
             android:paddingHorizontal="16dp"
             android:paddingVertical="20dp"
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/change_name"
             android:drawablePadding="8dp"
-            android:fontFamily="@font/funneldisplay_semibold"
+            android:fontFamily="@font/funnel_display_semibold"
             android:gravity="center_vertical"
             android:paddingHorizontal="16dp"
             android:paddingVertical="20dp"
