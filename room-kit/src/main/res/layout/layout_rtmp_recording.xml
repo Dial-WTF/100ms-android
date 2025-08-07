@@ -43,7 +43,7 @@
                         android:id="@+id/tv_start_streaming_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/inter_semibold"
+                        android:fontFamily="@font/funneldisplay_semibold"
                         android:text="START STREAMING"
                         android:textAllCaps="true"
                         android:textSize="10sp"
@@ -87,7 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/inter_semibold"
+                android:fontFamily="@font/funneldisplay_semibold"
                 android:text="Custom RTMP"
                 android:textSize="20sp" />
 
@@ -95,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:fontFamily="@font/inter_regular"
+                android:fontFamily="@font/funneldisplay_regular"
                 android:text="Add multiple channels on your platform to show your stream."
                 android:textSize="14sp" />
 
@@ -104,7 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:fontFamily="@font/inter_regular"
+                android:fontFamily="@font/funneldisplay_regular"
                 android:text="Resolution"
                 android:textSize="14sp" />
 

@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:drawablePadding="8dp"
-                android:fontFamily="@font/inter_semibold"
+                android:fontFamily="@font/funneldisplay_semibold"
                 android:text="Stop Recording"
                 android:textSize="16sp" />
 
@@ -51,7 +51,7 @@
             android:id="@+id/change_name_dec"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/inter_regular"
+            android:fontFamily="@font/funneldisplay_regular"
             android:paddingStart="24dp"
             android:text="Are you sure you want to stop recording? You can’t undo this action."
             android:textSize="14sp" />

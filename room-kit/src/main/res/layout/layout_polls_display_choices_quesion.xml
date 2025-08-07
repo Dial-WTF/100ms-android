@@ -97,7 +97,7 @@
         android:layout_marginTop="@dimen/spacing_d2"
         android:layout_marginRight="@dimen/spacing_d2"
         android:layout_marginBottom="@dimen/spacing_d3"
-        android:fontFamily="@font/inter_semibold"
+        android:fontFamily="@font/funneldisplay_semibold"
         android:gravity="center"
         android:lineHeight="24px"
         android:paddingHorizontal="@dimen/spacing_d2"

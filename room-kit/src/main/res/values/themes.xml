@@ -4,29 +4,42 @@
         <!-- Primary brand color. -->
         <item name="android:dividerHeight">8dp</item>
 
+        <!-- Retrowave Primary Colors -->
+        <item name="colorPrimary">#00CCFF</item>
+        <item name="colorPrimaryVariant">#0099CC</item>
 
-        <item name="colorOnSurface">@android:color/white</item>
-        <item name="colorOnBackground">@android:color/white</item>
-        <item name="colorOnPrimarySurface">@android:color/white</item>
+        <!-- Retrowave Secondary Colors -->
+        <item name="colorSecondary">#FF3399</item>
+        <item name="colorSecondaryVariant">#CC1A80</item>
 
-        <item name="fontFamily">@font/clan_pro_news</item>
+        <!-- Retrowave Surface Colors -->
+        <item name="colorSurface">#0D0D26</item>
+        <item name="android:colorBackground">#000000</item>
+
+        <item name="colorOnSurface">#FFFFFF</item>
+        <item name="colorOnBackground">#FFFFFF</item>
+        <item name="colorOnPrimarySurface">#FFFFFF</item>
+        <item name="colorOnPrimary">#000000</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <item name="fontFamily">@font/funnel_display_regular</item>
     </style>
 
     <!-- Base application theme. -->
     <style name="Theme.HmsHomeApp" parent="Theme.MaterialComponents">
-
-        <item name="colorPrimary">#14171C</item>
-        <item name="colorSurface">#1b2028</item>
-        <item name="colorSecondaryVariant">#1b2028</item>
+        <!-- Retrowave Colors -->
+        <item name="colorPrimary">#00CCFF</item>
+        <item name="colorSurface">#1A1A33</item>
+        <item name="colorSecondaryVariant">#1A1A33</item>
         <!-- Overflow Menu -->
-        <item name="android:itemBackground">#1b2028</item>
+        <item name="android:itemBackground">#1A1A33</item>
 
         <!-- Default Background Color -->
-        <item name="android:colorBackground">#0b0f15</item>
-        <item name="android:statusBarColor" >#14171C</item>
-        <item name="colorOnSurface">@android:color/white</item>
-        <item name="colorOnBackground">@android:color/white</item>
-        <item name="colorOnPrimarySurface">@android:color/white</item>
+        <item name="android:colorBackground">#000000</item>
+        <item name="android:statusBarColor">#0D0D26</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+        <item name="colorOnBackground">#FFFFFF</item>
+        <item name="colorOnPrimarySurface">#FFFFFF</item>
 
     </style>
 
@@ -51,15 +64,15 @@
     </style>
 
     <style name="MaterialButton" parent="Widget.MaterialComponents.Button">
-        <item name="fontFamily">@font/clan_pro_medium</item>
+        <item name="fontFamily">@font/funnel_display_medium</item>
     </style>
 
     <style name="MaterialTextButton" parent="Widget.MaterialComponents.Button.TextButton">
-        <item name="fontFamily">@font/clan_pro_medium</item>
+        <item name="fontFamily">@font/funnel_display_medium</item>
     </style>
 
     <style name="MaterialTextViewHeading" parent="Widget.MaterialComponents.TextView">
-        <item name="fontFamily">@font/clan_pro_medium</item>
+        <item name="fontFamily">@font/funnel_display_medium</item>
     </style>
 
     <style name="MaterialSwitch" parent="Widget.AppCompat.CompoundButton.Switch"></style>
@@ -84,10 +97,8 @@
     </style>
 
     <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
-
         <item name="android:background">@drawable/shape_round_dialog</item>
     </style>
-
 
     <style name="RoleChangeAlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
         <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
@@ -95,11 +106,13 @@
     </style>
 
     <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
-        <item name="android:textColor">#ffff</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="fontFamily">@font/funnel_display_medium</item>
     </style>
 
     <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
-        <item name="android:textColor">#ffff</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="fontFamily">@font/funnel_display_medium</item>
     </style>
 
     <style name="SpinnerTheme" parent="android:Widget.Spinner">
@@ -107,53 +120,53 @@
     </style>
 
     <style name="HmsHeadings" parent="MaterialTextViewHeading">
-        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="android:fontFamily">@font/funnel_display_semibold</item>
         <item name="android:textSize">20sp</item>
     </style>
 
     <style name="HmsPollCardText" parent="Widget.MaterialComponents.TextView">
-        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:fontFamily">@font/funnel_display_regular</item>
         <item name="android:textSize">16sp</item>
     </style>
 
     <style name="HmsSubHeadings" parent="Widget.MaterialComponents.TextView">
-        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:fontFamily">@font/funnel_display_regular</item>
         <item name="android:textSize">14sp</item>
     </style>
 
     <style name="QuestionNumberText" parent="Widget.MaterialComponents.TextView">
-        <item name="android:fontFamily">@font/inter_regular</item>
-        <item name="android:textColor">#C3D0E580</item>
+        <item name="android:fontFamily">@font/funnel_display_regular</item>
+        <item name="android:textColor">#CCE6FF80</item>
         <item name="android:textSize">10sp</item>
     </style>
 
     <style name="poll_display_title">
-        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:fontFamily">@font/funnel_display_regular</item>
         <item name="android:lineSpacingExtra">5sp</item>
         <item name="android:textSize">16sp</item>
         <item name="android:letterSpacing">0.03</item>
-        <item name="android:textColor">#F2F5F9FF</item>
+        <item name="android:textColor">#FFFFFF</item>
     </style>
 
     <style name="poll_display_question_numbering">
-        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:fontFamily">@font/funnel_display_regular</item>
         <item name="android:lineSpacingExtra">4sp</item>
         <item name="android:textSize">10sp</item>
         <item name="android:letterSpacing">0.15</item>
-        <item name="android:textColor">#80C3D0E5</item>
+        <item name="android:textColor">#CCE6FF80</item>
     </style>
 
     <style name="poll_display_answer_item">
         <item name="android:textSize">14sp</item>
-        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:fontFamily">@font/funnel_display_regular</item>
         <item name="android:letterSpacing">0.02</item>
-        <item name="android:textColor">#F2F5F9FF</item>
+        <item name="android:textColor">#FFFFFF</item>
     </style>
 
     <style name="polls_question_asking_options">
         <item name="android:textSize">14sp</item>
         <item name="android:letterSpacing">0.02</item>
-        <item name="android:textColor">#CCE0ECFF</item>
+        <item name="android:textColor">#CCE6FF</item>
     </style>
 
     <style name="RoundedTabLayoutStyle" parent="Widget.Design.TabLayout">
@@ -161,7 +174,7 @@
     </style>
     <style name="RoundedTabsTextStyle" parent="TextAppearance.Design.Tab">
         <item name="textAllCaps">false</item>
-        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="fontFamily">@font/funnel_display_semibold</item>
         <item name="android:textSize">14dp</item>
     </style>
 

@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Retrowave Primary Colors - Electric Blue/Cyan -->
+    <color name="retrowave_primary_default">#00CCFF</color>
+    <color name="retrowave_primary_bright">#33E6FF</color>
+    <color name="retrowave_primary_dim">#0099CC</color>
+    <color name="retrowave_primary_disabled">#006699</color>
+
+    <!-- Retrowave Secondary Colors - Hot Pink/Magenta -->
+    <color name="retrowave_secondary_default">#FF3399</color>
+    <color name="retrowave_secondary_bright">#FF66CC</color>
+    <color name="retrowave_secondary_dim">#CC1A80</color>
+    <color name="retrowave_secondary_disabled">#991A4D</color>
+
+    <!-- Retrowave Surface Colors - Deep Dark with Purple Tint -->
+    <color name="retrowave_surface_default">#0D0D26</color>
+    <color name="retrowave_surface_bright">#1A1A33</color>
+    <color name="retrowave_surface_brighter">#262640</color>
+    <color name="retrowave_surface_dim">#05051A</color>
+
+    <!-- Retrowave Background Colors -->
+    <color name="retrowave_background_default">#000000</color>
+    <color name="retrowave_background_dim">#050514</color>
+
+    <!-- Retrowave Text Colors -->
+    <color name="retrowave_text_high">#FFFFFF</color>
+    <color name="retrowave_text_medium">#CCE6FF</color>
+    <color name="retrowave_text_low">#99B3CC</color>
+    <color name="retrowave_text_on_primary">#000000</color>
+    <color name="retrowave_text_on_secondary">#FFFFFF</color>
+
+    <!-- Retrowave Alert Colors -->
+    <color name="retrowave_alert_success">#00FF80</color>
+    <color name="retrowave_alert_warning">#FF9900</color>
+    <color name="retrowave_alert_error">#FF3366</color>
+    <color name="retrowave_alert_error_bright">#FF6699</color>
+
+    <!-- Retrowave Border Colors -->
+    <color name="retrowave_border_default">#00CCFF99</color>
+    <color name="retrowave_border_bright">#33E6FF</color>
+
+    <!-- Legacy Colors - kept for compatibility -->
     <color name="poll_state_live">#CB525E</color>
     <color name="poll_state_draft">#475366</color>
     <color name="poll_state_ended">#475366</color>
@@ -10,5 +50,4 @@
     <color name="black_overlay">#66000000</color>
     <!--  Turn off exoplayer's bottom bar shading  -->
     <color name="exo_bottom_bar_background">#FF000000</color>
-
 </resources>

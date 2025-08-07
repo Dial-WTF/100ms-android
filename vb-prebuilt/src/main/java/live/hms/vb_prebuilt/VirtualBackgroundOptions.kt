@@ -124,7 +124,7 @@ fun VirtualBackgroundOptions(
             text = "Effects", style = TextStyle(
                 fontSize = 14.sp,
                 lineHeight = 24.sp,
-                fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.inter_regular)),
+                fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.funneldisplay_regular)),
                 fontWeight = FontWeight(600),
                 color = Variables.OnSecondaryHigh,
                 letterSpacing = 0.15.sp,
@@ -187,7 +187,7 @@ fun VirtualBackgroundOptions(
                 style = TextStyle(
                     fontSize = 14.sp,
                     lineHeight = 20.sp,
-                    fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.inter_bold)),
+                    fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.funneldisplay_bold)),
                     fontWeight = FontWeight(600),
                     color = Variables.OnSurfaceHigh,
                     letterSpacing = 0.1.sp,
@@ -276,7 +276,7 @@ fun BottomSheetHeader(close : () -> Unit,) {
             text = "Virtual Background", style = TextStyle(
                 fontSize = 16.sp,
                 lineHeight = 24.sp,
-                fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.inter_bold)),
+                fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.funneldisplay_bold)),
                 fontWeight = FontWeight(600),
                 color = Variables.OnSecondaryHigh,
                 letterSpacing = 0.15.sp,
@@ -325,7 +325,7 @@ fun VbOptionButton(@DrawableRes drawable :  Int,
             style = TextStyle(
                 fontSize = 12.sp,
                 lineHeight = 16.sp,
-                fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.inter_regular)),
+                fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.funneldisplay_regular)),
                 fontWeight = FontWeight(400),
                 color = Variables.OnSurfaceMedium,
                 letterSpacing = 0.4.sp,

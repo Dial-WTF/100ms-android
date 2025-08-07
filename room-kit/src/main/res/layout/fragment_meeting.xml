@@ -54,7 +54,7 @@
             android:layout_marginHorizontal="16dp"
             android:gravity="center"
             app:layout_constraintVertical_chainStyle="packed"
-            android:fontFamily="@font/inter_semibold"
+            android:fontFamily="@font/funneldisplay_semibold"
             android:text="Stream yet to start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -70,7 +70,7 @@
             app:layout_constraintVertical_chainStyle="packed"
             android:layout_marginHorizontal="16dp"
             android:gravity="center"
-            android:fontFamily="@font/inter_regular"
+            android:fontFamily="@font/funneldisplay_regular"
             android:text="Sit back and relax"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -157,7 +157,7 @@
                     android:text="@string/live_str"
                     android:paddingHorizontal="@dimen/eight_dp"
                     android:paddingVertical="@dimen/four_dp"
-                    android:fontFamily="@font/inter_semibold"
+                    android:fontFamily="@font/funneldisplay_semibold"
                     android:lineHeight="16sp"
                     android:textSize="12sp" />
 
@@ -207,7 +207,7 @@
                     android:gravity="center"
                     android:drawableStart="@drawable/ic_eye_on"
                     android:paddingHorizontal="@dimen/four_dp"
-                    android:fontFamily="@font/inter_semibold"
+                    android:fontFamily="@font/funneldisplay_semibold"
                     android:textSize="10sp"
                     android:paddingVertical="@dimen/two_dp"
                     android:visibility="visible"
@@ -362,14 +362,14 @@
                 android:layout_height="match_parent"
                 android:ellipsize="end"
                 android:drawablePadding="@dimen/spacing_d0"
-                android:fontFamily="@font/inter_bold"
+                android:fontFamily="@font/funneldisplay_bold"
                 android:lineHeight="16px"
                 android:drawableEnd="@drawable/tiny_down_chevron"
                 android:maxLines="1"
                 android:singleLine="true"
                 android:text="@string/chat_rbac_picker_send_to"
                 android:textSize="12sp"
-                app:fontFamily="@font/inter_regular"
+                app:fontFamily="@font/funneldisplay_regular"
                 tools:layout_editor_absoluteY="2dp" />
         </com.google.android.material.card.MaterialCardView>
         <View
@@ -416,7 +416,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/inter_semibold"
+            android:fontFamily="@font/funneldisplay_semibold"
             android:lineHeight="20sp"
             android:textSize="14sp"
             android:letterSpacing="0.01"
@@ -427,7 +427,7 @@
             android:id="@+id/chatPausedBy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/inter_regular"
+            android:fontFamily="@font/funneldisplay_regular"
             android:layout_marginTop="2dp"
             android:lineHeight="16sp"
             android:textSize="12sp"
@@ -445,7 +445,7 @@
             android:visibility="gone"
             android:gravity="center"
             android:textSize="14sp"
-            android:fontFamily="@font/inter_regular"
+            android:fontFamily="@font/funneldisplay_regular"
             android:text="@string/blocked_from_sending_messages"
             />
         <EditText
@@ -454,7 +454,7 @@
             android:layout_toStartOf="@id/icon_send"
             android:layout_alignParentStart="true"
             android:textSize="14sp"
-            android:fontFamily="@font/inter_regular"
+            android:fontFamily="@font/funneldisplay_regular"
             android:minHeight="24dp"
             android:layout_height="wrap_content"
             android:hint="@string/send_messages_to_everyone"

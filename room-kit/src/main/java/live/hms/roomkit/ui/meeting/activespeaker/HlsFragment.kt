@@ -583,7 +583,7 @@ fun ChatHeader(
                         "About Session",
                         fontSize = 16.sp,
                         lineHeight = 24.sp,
-                        fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.inter_semibold)),
+                        fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.funneldisplay_semibold)),
                         fontWeight = FontWeight(600),
                         color = OnSurfaceHigh,
                         letterSpacing = 0.15.sp,
@@ -622,7 +622,7 @@ fun ChatHeader(
                             it, style = TextStyle(
                                 fontSize = 14.sp,
                                 lineHeight = 20.sp,
-                                fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.inter_regular)),
+                                fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.funneldisplay_regular)),
                                 fontWeight = FontWeight(600),
                                 color = Variables.OnSecondaryHigh,
                                 letterSpacing = 0.1.sp,
@@ -633,13 +633,13 @@ fun ChatHeader(
                     Row(horizontalArrangement = Arrangement.spacedBy(12.dp, Alignment.Start)) {
                         val textStyle = SpanStyle(
                             fontSize = 12.sp,
-                            fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.inter_regular)),
+                            fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.funneldisplay_regular)),
                             fontWeight = FontWeight(400),
                             color = Variables.OnSurfaceMedium,
                             letterSpacing = 0.4.sp,
                         )
                         val moreStyle = SpanStyle(
-                                fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.inter_semibold)),
+                                fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.funneldisplay_semibold)),
                                 fontSize = 12.sp,
                                 fontWeight = FontWeight(600),
                                 color = OnSurfaceHigh,
@@ -677,7 +677,7 @@ fun ChatHeader(
                     text = description,
                     fontSize = 14.sp,
                     lineHeight = 20.sp,
-                    fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.inter_regular)),
+                    fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.funneldisplay_regular)),
                     fontWeight = FontWeight(400),
                     color = Variables.OnSurfaceMedium,
                 )
@@ -757,7 +757,7 @@ fun ChatMessage(name: String, message: String) {
             name, style = TextStyle(
                 fontSize = 14.sp,
                 lineHeight = 20.sp,
-                fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.inter_regular)),
+                fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.funneldisplay_regular)),
                 fontWeight = FontWeight(600),
                 color = OnSurfaceHigh,
                 letterSpacing = 0.1.sp,
@@ -767,7 +767,7 @@ fun ChatMessage(name: String, message: String) {
             message, style = TextStyle(
                 fontSize = 14.sp,
                 lineHeight = 20.sp,
-                fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.inter_regular)),
+                fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.funneldisplay_regular)),
                 fontWeight = FontWeight(400),
                 color = OnSurfaceHigh,
                 letterSpacing = 0.25.sp,
@@ -834,7 +834,7 @@ fun GoLiveText(isLive : Boolean, behindBy: String, goLiveClicked : () -> Unit) {
             style = TextStyle(
                 fontSize = 16.sp,
                 lineHeight = 24.sp,
-                fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.inter_regular)),
+                fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.funneldisplay_regular)),
                 fontWeight = FontWeight(600),
                 color = if(isLive) OnSurfaceHigh else Variables.OnSurfaceMedium,
                 letterSpacing = 0.5.sp,
@@ -849,7 +849,7 @@ fun GoLiveText(isLive : Boolean, behindBy: String, goLiveClicked : () -> Unit) {
                 style = TextStyle(
                     fontSize = 16.sp,
                     lineHeight = 24.sp,
-                    fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.inter_regular)),
+                    fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.funneldisplay_regular)),
                     fontWeight = FontWeight(600),
                     color = if(isLive) OnSurfaceHigh else Variables.OnSurfaceMedium,
                     letterSpacing = 0.5.sp,
@@ -1014,7 +1014,7 @@ fun HlsComposable(
                                 style = TextStyle(
                                     fontSize = 11.sp,
                                     lineHeight = 13.sp,
-                                    fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.inter_semibold)),
+                                    fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.funneldisplay_semibold)),
                                     color = Color.White,
                                     letterSpacing = 0.5.sp,
                                 )
@@ -1427,7 +1427,7 @@ fun HlsChatIcon(chatEnabled: Boolean, unreadMessages :Int?, buttonClicked: () ->
                     lineHeight = 16.sp,
                     color = OnSurfaceHigh,
                     fontSize = 10.sp,
-                    fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.inter_regular)),
+                    fontFamily = FontFamily(Font(live.hms.prebuilt_themes.R.font.funneldisplay_regular)),
                     fontWeight = FontWeight(600),
                     textAlign = TextAlign.Center,
                 )

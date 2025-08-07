@@ -16,7 +16,7 @@
         android:maxLines="2"
         android:ellipsize="end"
         android:gravity="center_vertical"
-        android:fontFamily="@font/inter_regular"
+        android:fontFamily="@font/funneldisplay_regular"
         android:lineHeight="16sp"
         android:textSize="12sp" />
 </LinearLayout>

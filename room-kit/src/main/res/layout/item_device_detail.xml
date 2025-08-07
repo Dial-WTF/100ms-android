@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawablePadding="8dp"
-        android:fontFamily="@font/inter_semibold"
+        android:fontFamily="@font/funneldisplay_semibold"
         android:gravity="center_vertical"
         android:paddingHorizontal="16dp"
         android:paddingVertical="20dp"

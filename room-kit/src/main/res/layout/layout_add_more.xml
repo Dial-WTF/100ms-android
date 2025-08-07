@@ -12,6 +12,6 @@
         android:text="Add another question"
         android:gravity="center_vertical"
         android:textSize="14sp"
-        android:fontFamily="@font/inter_regular"
+        android:fontFamily="@font/funneldisplay_regular"
         android:lineHeight="20sp"/>
 </LinearLayout>

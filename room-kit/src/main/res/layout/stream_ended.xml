@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/stream_ended_title"
         android:text="@string/stream_ended"
-        android:fontFamily="@font/inter_semibold"
+        android:fontFamily="@font/funneldisplay_semibold"
         android:textSize="24sp"
         android:lineHeight="32sp"
         />
@@ -28,7 +28,7 @@
         android:textSize="16sp"
         android:lineHeight="24sp"
         android:text="@string/stream_ended_subtitle"
-        android:fontFamily="@font/inter_regular"
+        android:fontFamily="@font/funneldisplay_regular"
         android:layout_marginBottom="48dp"
         />
 

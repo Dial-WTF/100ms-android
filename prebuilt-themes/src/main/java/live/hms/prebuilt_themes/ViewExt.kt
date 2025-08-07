@@ -44,7 +44,7 @@ var TextView.drawableBottom: Drawable?
 @Deprecated("Consider replace with drawableStart to better support right-to-left Layout", ReplaceWith("drawableStart"))
 var TextView.drawableLeft: Drawable?
     get() = compoundDrawables[0]
-    set(value) = setCompoundDrawablesWithIntrinsicBounds(value, drawableTop, drawableRight, drawableBottom)
+    set(value) = setCompoundDrawablesWithIntrinsicBounds(value, drawableTop, drawableEnd, drawableBottom)
 
 @Deprecated("Consider replace with drawableEnd to better support right-to-left Layout", ReplaceWith("drawableEnd"))
 var TextView.drawableRight: Drawable?

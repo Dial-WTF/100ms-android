@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_icon_exit"
             android:drawablePadding="10dp"
-            android:fontFamily="@font/inter_semibold"
+            android:fontFamily="@font/funneldisplay_semibold"
             android:gravity="center|start"
             android:paddingVertical="6dp"
             android:text="Leave Studio"
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
-            android:fontFamily="@font/inter_semibold"
+            android:fontFamily="@font/funneldisplay_semibold"
             android:paddingHorizontal="8dp"
             android:text="Others will continue after you leave. You can join the studio again."
             android:textSize="14sp" />
@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/gray_round_stroked_drawable"
-                android:fontFamily="@font/inter_semibold"
+                android:fontFamily="@font/funneldisplay_semibold"
                 android:text="Don’t Leave"
                 android:textAllCaps="false" />
 
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/primary_round_drawable"
-                android:fontFamily="@font/inter_semibold"
+                android:fontFamily="@font/funneldisplay_semibold"
                 android:text="Leave"
                 android:textAllCaps="false" />
 

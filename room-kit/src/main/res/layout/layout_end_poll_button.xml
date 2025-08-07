@@ -16,5 +16,5 @@
         android:lineHeight="24px"
         android:layout_marginRight="@dimen/spacing_d2"
         android:textSize="16sp"
-        android:fontFamily="@font/inter_semibold" />
+        android:fontFamily="@font/funneldisplay_semibold" />
 </LinearLayout>

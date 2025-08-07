@@ -128,3 +128,26 @@ dependencies {
     implementation "com.github.bumptech.glide:compose:1.0.0-beta01"
 
 }
+
+task copyFonts(type: Copy) {
+    from '../../../assets/fonts'
+    into 'src/main/res/font'
+    include '*.ttf', '*.otf'
+    rename { filename ->
+        // Extract the extension first
+        def lastDotIndex = filename.lastIndexOf('.')
+        def nameWithoutExt = lastDotIndex > 0 ? filename.substring(0, lastDotIndex) : filename
+        def extension = lastDotIndex > 0 ? filename.substring(lastDotIndex) : '.ttf'
+
+        // Convert name to lowercase, replace invalid chars
+        def lower = nameWithoutExt.toLowerCase()
+        def replaced = lower.replaceAll(/[^a-z0-9_]/, '_')
+
+        // Ensure starts with a letter
+        def finalName = !replaced.charAt(0).isLetter() ? "f${replaced}" : replaced
+
+        "${finalName}${extension}"
+    }
+}
+
+preBuild.dependsOn copyFonts

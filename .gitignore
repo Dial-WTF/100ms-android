@@ -15,3 +15,4 @@ local.properties
 assets/*.mp4
 secrets/
 room-kit/gradle.properties
+**/res/font/

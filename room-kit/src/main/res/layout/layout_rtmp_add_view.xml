@@ -23,7 +23,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/inter_semibold"
+                android:fontFamily="@font/funneldisplay_semibold"
                 android:text="Stream 1"
                 android:textSize="16sp" />
 
@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:fontFamily="@font/inter_semibold"
+            android:fontFamily="@font/funneldisplay_semibold"
             android:text="RTMP URL"
             android:textColor="#F2F5F9FF"
             android:textSize="14sp" />
@@ -74,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:fontFamily="@font/inter_semibold"
+            android:fontFamily="@font/funneldisplay_semibold"
             android:text="Streaming Key"
             android:textColor="#F2F5F9FF"
             android:textSize="14sp" />

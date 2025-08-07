@@ -24,7 +24,7 @@
         android:id="@+id/participantsNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/inter_semibold"
+        android:fontFamily="@font/funneldisplay_semibold"
         android:textSize="14sp"
         android:layout_weight="1"
         tools:hint="Participants" />

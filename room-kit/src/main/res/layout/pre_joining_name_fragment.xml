@@ -27,7 +27,7 @@
         android:gravity="center"
         android:text="@string/go_live_in_five_str"
         android:textSize="34sp"
-        app:fontFamily="@font/inter_bold" />
+        app:fontFamily="@font/funneldisplay_bold" />
 
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="match_parent"
@@ -48,7 +48,7 @@
         android:layout_marginTop="40dp"
         android:autofillHints=""
         android:background="@drawable/gray_round_btn"
-        android:fontFamily="@font/inter_regular"
+        android:fontFamily="@font/funneldisplay_regular"
         android:hint="@string/name_hint_str"
         android:inputType="text"
         android:paddingHorizontal="10dp"
@@ -65,7 +65,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginBottom="20dp"
         android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
-        android:fontFamily="@font/inter_bold"
+        android:fontFamily="@font/funneldisplay_bold"
         android:paddingVertical="12dp"
         android:text="@string/get_started_str"
         android:textAllCaps="false" />

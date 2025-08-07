@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/inter_semibold"
+            android:fontFamily="@font/funneldisplay_semibold"
             android:padding="8dp"
             android:text="Change Role Request"
 
@@ -29,7 +29,7 @@
             android:id="@+id/change_role_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/inter_semibold"
+            android:fontFamily="@font/funneldisplay_semibold"
             android:padding="8dp"
             android:textSize="14sp" />
 
@@ -48,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gray_round_stroked_drawable"
-                android:fontFamily="@font/inter_semibold"
+                android:fontFamily="@font/funneldisplay_semibold"
                 android:paddingHorizontal="30dp"
                 android:text="Reject" />
 
@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/primary_blue_round_drawable"
-                android:fontFamily="@font/inter_semibold"
+                android:fontFamily="@font/funneldisplay_semibold"
                 android:paddingHorizontal="30dp"
                 android:text="Accept" />
 
